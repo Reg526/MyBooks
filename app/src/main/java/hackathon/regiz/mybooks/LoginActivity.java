@@ -15,14 +15,19 @@ import android.widget.TextView;
 public class LoginActivity extends AppCompatActivity {
 
     //AutoCompleteTextView loginEmail = (AutoCompleteTextView) findViewById(R.id.loginEmail);
-   // EditText loginPass = (EditText) findViewById(R.id.loginPass);
-    TextView forgotPassBtn, createAccBtn;
-    Button loginBtn;
+    //EditText loginPass = (EditText) findViewById(R.id.loginPass);
+    //TextView forgotPassBtn, createAccBtn;
+    //Button loginBtn;
 
     public void buttonOnClick(View v){
         switch(v.getId()){
             case R.id.loginBtn:
-                //TODO Add function to main page login button
+                //TODO Finish login check method
+                /*if(checkID(loginEmail, loginPass))
+                    startActivity(new Intent(LoginActivity.this, BuySell.class));
+                else
+                */
+                startActivity(new Intent(LoginActivity.this, BuySell.class));
                 break;
             case R.id.createAccBtn:
                 startActivity(new Intent(LoginActivity.this, CreateAccount.class));
@@ -30,6 +35,13 @@ public class LoginActivity extends AppCompatActivity {
             case R.id.forgotPassBtn:
                 startActivity(new Intent(LoginActivity.this, ForgotPassword.class));
         }
+    }
+
+    public boolean checkID(String email, String pass){
+        boolean check = false;
+
+
+        return check;
     }
 
     @Override

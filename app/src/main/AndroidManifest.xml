@@ -36,6 +36,33 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="hackathon.regiz.mybooks.LoginActivity" />
         </activity>
+        <activity
+            android:name=".BuySell"
+            android:label="@string/title_activity_buy_sell"
+            android:parentActivityName=".LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="hackathon.regiz.mybooks.LoginActivity" />
+        </activity>
+        <activity
+            android:name=".BuyHomepage"
+            android:label="@string/title_activity_buy_homepage"
+            android:parentActivityName=".BuySell"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="hackathon.regiz.mybooks.BuySell" />
+        </activity>
+        <activity
+            android:name=".SellForm"
+            android:label="@string/title_activity_sell_form"
+            android:parentActivityName=".BuySell"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="hackathon.regiz.mybooks.BuySell" />
+        </activity>
     </application>
 
 </manifest>
